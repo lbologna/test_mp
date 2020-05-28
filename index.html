@@ -3,6 +3,22 @@
 <head>
 	<title>Index</title>
 	<link rel="stylesheet" type="text/css" href="static/css/live_paper.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script>  
+		console.log("######################");
+        	var url = 'https://object.cscs.ch/v1/AUTH_63ea6845b1d34ad7a43c8158d9572867/hbp-00713_mIPSCs-scFv-gephcyto/mIPSCs-scFv-gephcyto/mIPSCs-g
+    		var storedText;                                                                 
+                                                                                    
+	fetch(url)                                                                          
+  		.then(function(response) {                                                        
+    		response.text().then(function(text) {                                           
+      		storedText = text;                                                            
+        	console.log(storedText)                                                     
+		//      done();                                                                     
+    		});                                                                             
+  		});    
+	</script>  
+	
 </head>
 <body>
 <div class="main_menu">
